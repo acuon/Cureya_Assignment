@@ -24,6 +24,8 @@ class FragmentProfile : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.root.alpha = 0.5f
+        binding.progressbar.visibility = View.VISIBLE
         mAuth = FirebaseAuth.getInstance()
         mDbRef = FirebaseDatabase.getInstance().reference
         userDetails = ArrayList()
@@ -38,10 +40,15 @@ class FragmentProfile : Fragment() {
                     userName.text = userDetails[1]
                     userEmail.text = userDetails[0]
                     userUid.text = userDetails[2]
+                    profileLayout.alpha = 1f
+                    progressbar.visibility = View.GONE
                 }
             }
             override fun onCancelled(error: DatabaseError) {
-
+                binding.apply {
+                    profileLayout.alpha = 1f
+                    progressbar.visibility = View.GONE
+                }
             }
         })
     }
