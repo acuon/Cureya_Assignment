@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25139527738",
+    "project_id": "cureyaassignment",
+    "storage_bucket": "cureyaassignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25139527738:android:08b3b3c86d568f7d8f7503",
+        "android_client_info": {
+          "package_name": "dev.acuon.cureya_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25139527738-7g1smhu9s7uhpil28e3h2d21ulfim7l5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVg4N6MIL00W63JLcjvUyKkyul1L_1ND0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25139527738-7g1smhu9s7uhpil28e3h2d21ulfim7l5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
